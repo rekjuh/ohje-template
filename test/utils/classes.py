@@ -4,7 +4,7 @@ from typing import Any, NamedTuple
 
 from pathlib import Path
 
-from peltomappi.composition import Composition, CompositionBackend
+from site.composition import Composition, CompositionBackend
 
 
 class CompositionBackendTest(CompositionBackend):

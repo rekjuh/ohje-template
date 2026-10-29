@@ -1,18 +1,19 @@
 site_name: Peltomappi
-site_url: https://gispocoding.github.io/eip-peltomappi/
+site_url: https://gispocoding.github.io/REPOSITORY_NAME/
 copyright: 'Tekijä: <a href="info@gispo.fi">Gispo Suomi Oy</a>'
+
 nav:
-  - <img src="img/peltomappi-markkeri.png"/> Koti: index.md
-  - Esittely: esittely.md
-  - Projektin lataaminen: projektin_lataaminen.md
-  - Karttanäkymä: karttanäkymä.md
-  - Selainkäyttöliittymä: selainkayttoliittyma.md
-  - Tietojen tallentaminen peltolohkolle: tietojen_tallentaminen_peltolohkolle.md
-  - Salaojakarttojen georeferointi: salaojakarttojen_georeferointi.md
-  - Reitin nauhoitus: reitin_nauhoitus.md
-  - Muut ominaisuudet: muut_ominaisuudet.md
-  - Palaute: palaute.md
+  - <img src="img/markkeri.png"/> Koti: index.md
+  - Esittely: sivu_1.md
   - Muutosloki: muutosloki.md
+#  - Projektin lataaminen: projektin_lataaminen.md
+#  - Karttanäkymä: karttanäkymä.md
+#  - Selainkäyttöliittymä: selainkayttoliittyma.md
+#  - Tietojen tallentaminen peltolohkolle: tietojen_tallentaminen_peltolohkolle.md
+#  - Salaojakarttojen georeferointi: salaojakarttojen_georeferointi.md
+#  - Reitin nauhoitus: reitin_nauhoitus.md
+#  - Muut ominaisuudet: muut_ominaisuudet.md
+#  - Palaute: palaute.md
 
 use_directory_urls: false
 
@@ -44,9 +45,9 @@ theme:
     - header.autohide
     - content.code.copy
   palette:
-    scheme: peltomappi
-  logo: img/pysty_peltomappi.png
-  favicon: img/pysty_peltomappi.png
+    scheme: scheme_1
+  logo: img/gispologo.svg
+  favicon: img/gispologo.svg
 
 
 

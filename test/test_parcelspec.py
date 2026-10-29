@@ -7,13 +7,13 @@ from freezegun import freeze_time
 from geopandas import gpd
 
 
-from peltomappi.filter import FIELD_PARCEL_IDENTIFIER_COLUMN
-from peltomappi.parcelspec import ParcelSpecification
+from site.filter import FIELD_PARCEL_IDENTIFIER_COLUMN
+from site.parcelspec import ParcelSpecification
 
 
 import tempfile
 
-from peltomappi.subproject import SUBPROJECT_CONFIG_NAME, TEMPLATE_MERGIN_CONFIG_NAME, TEMPLATE_QGIS_PROJECT_NAME
+from site.subproject import SUBPROJECT_CONFIG_NAME, TEMPLATE_MERGIN_CONFIG_NAME, TEMPLATE_QGIS_PROJECT_NAME
 
 
 def test_from_json(
