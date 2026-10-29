@@ -5,8 +5,8 @@ import pytest
 
 from pathlib import Path
 
-from peltomappi.composition import Composition
-from peltomappi.logger import LOGGER
+from site.composition import Composition
+from site.logger import LOGGER
 from test.utils.classes import ContainedComposition, CompositionBackendTest
 from test.utils.utils import testdata_path
 

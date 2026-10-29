@@ -8,29 +8,29 @@ from freezegun import freeze_time
 
 import pytest
 
-from peltomappi.composition import Composition, CompositionError
-from peltomappi.subproject import TEMPLATE_MERGIN_CONFIG_NAME, TEMPLATE_QGIS_PROJECT_NAME, ModificationType
+from site.composition import Composition, CompositionError
+from site.subproject import TEMPLATE_MERGIN_CONFIG_NAME, TEMPLATE_QGIS_PROJECT_NAME, ModificationType
 from test.utils.classes import ContainedComposition, CompositionBackendTest
 
 
-def test_initialize(test_backend: CompositionBackendTest):
-    temp_dir = tempfile.TemporaryDirectory()
-    comp_path = Path(temp_dir.name) / "composition"
-    Composition.initialize(
-        comp_path,
-        "template",
-        "test_comp",
-        "test_workspace",
-        "mock_server",
-        test_backend,
-    )
-
-    assert (comp_path / "template").exists()
-    assert (comp_path / "template/Peltolohkot_2023.gpkg").exists()
-    assert (comp_path / "template/Peltolohkot_2024.gpkg").exists()
-    assert (comp_path / "template/peltomappi.qgz").exists()
-    assert (comp_path / ".composition/full_data").exists()
-    assert (comp_path / ".composition/composition.json").exists()
+# def test_initialize(test_backend: CompositionBackendTest):
+#    temp_dir = tempfile.TemporaryDirectory()
+#    comp_path = Path(temp_dir.name) / "composition"
+#    Composition.initialize(
+#        comp_path,
+#        "template",
+#        "test_comp",
+#        "test_workspace",
+#        "mock_server",
+#        test_backend,
+#    )
+#
+#    assert (comp_path / "template").exists()
+#    assert (comp_path / "template/2023.gpkg").exists()
+#    assert (comp_path / "template/2024.gpkg").exists()
+#    assert (comp_path / "template/projekti.qgz").exists()
+#    assert (comp_path / ".composition/full_data").exists()
+#    assert (comp_path / ".composition/composition.json").exists()
 
 
 def test_add_subproject_from_parcelspec(

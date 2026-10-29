@@ -4,7 +4,7 @@ import shutil
 from uuid import UUID
 
 
-from peltomappi.subproject import (
+from site.subproject import (
     ModificationAction,
     ModificationType,
     Subproject,
